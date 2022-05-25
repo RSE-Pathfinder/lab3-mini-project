@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "mini")
 set(mini_VERSION "0.0.0")
-set(mini_MAINTAINER "paulyse <paulyse@todo.todo>")
+set(mini_MAINTAINER "paulyse <paulyse@todo.todo>, syamim <syamim@todo.todo>, paulyse <paulyse@todo.todo>, paulyse <paulyse@todo.todo>, paulyse <paulyse@todo.todo>")
 set(mini_PACKAGE_FORMAT "2")
 set(mini_BUILD_DEPENDS "message_generation")
 set(mini_BUILD_EXPORT_DEPENDS )
