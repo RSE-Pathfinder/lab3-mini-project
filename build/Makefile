@@ -285,6 +285,97 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named mini_generate_messages_py
+
+# Build rule for target.
+mini_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_generate_messages_py
+.PHONY : mini_generate_messages_py
+
+# fast build rule for target.
+mini_generate_messages_py/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_py.dir/build.make mini/CMakeFiles/mini_generate_messages_py.dir/build
+.PHONY : mini_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named mini_gennodejs
+
+# Build rule for target.
+mini_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_gennodejs
+.PHONY : mini_gennodejs
+
+# fast build rule for target.
+mini_gennodejs/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_gennodejs.dir/build.make mini/CMakeFiles/mini_gennodejs.dir/build
+.PHONY : mini_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named mini_genlisp
+
+# Build rule for target.
+mini_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_genlisp
+.PHONY : mini_genlisp
+
+# fast build rule for target.
+mini_genlisp/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_genlisp.dir/build.make mini/CMakeFiles/mini_genlisp.dir/build
+.PHONY : mini_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named mini_geneus
+
+# Build rule for target.
+mini_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_geneus
+.PHONY : mini_geneus
+
+# fast build rule for target.
+mini_geneus/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_geneus.dir/build.make mini/CMakeFiles/mini_geneus.dir/build
+.PHONY : mini_geneus/fast
+
+#=============================================================================
+# Target rules for targets named mini_generate_messages_eus
+
+# Build rule for target.
+mini_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_generate_messages_eus
+.PHONY : mini_generate_messages_eus
+
+# fast build rule for target.
+mini_generate_messages_eus/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_eus.dir/build.make mini/CMakeFiles/mini_generate_messages_eus.dir/build
+.PHONY : mini_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named mini_gencpp
+
+# Build rule for target.
+mini_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_gencpp
+.PHONY : mini_gencpp
+
+# fast build rule for target.
+mini_gencpp/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_gencpp.dir/build.make mini/CMakeFiles/mini_gencpp.dir/build
+.PHONY : mini_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named mini_generate_messages_cpp
+
+# Build rule for target.
+mini_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_generate_messages_cpp
+.PHONY : mini_generate_messages_cpp
+
+# fast build rule for target.
+mini_generate_messages_cpp/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_cpp.dir/build.make mini/CMakeFiles/mini_generate_messages_cpp.dir/build
+.PHONY : mini_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -296,6 +387,19 @@ roscpp_generate_messages_py: cmake_check_build_system
 roscpp_generate_messages_py/fast:
 	$(MAKE) -f mini/CMakeFiles/roscpp_generate_messages_py.dir/build.make mini/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named mini_genpy
+
+# Build rule for target.
+mini_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_genpy
+.PHONY : mini_genpy
+
+# fast build rule for target.
+mini_genpy/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_genpy.dir/build.make mini/CMakeFiles/mini_genpy.dir/build
+.PHONY : mini_genpy/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_eus
@@ -363,6 +467,19 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named mini_generate_messages_lisp
+
+# Build rule for target.
+mini_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_generate_messages_lisp
+.PHONY : mini_generate_messages_lisp
+
+# fast build rule for target.
+mini_generate_messages_lisp/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_lisp.dir/build.make mini/CMakeFiles/mini_generate_messages_lisp.dir/build
+.PHONY : mini_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -374,6 +491,19 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 rosgraph_msgs_generate_messages_eus/fast:
 	$(MAKE) -f mini/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mini/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named mini_generate_messages
+
+# Build rule for target.
+mini_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_generate_messages
+.PHONY : mini_generate_messages
+
+# fast build rule for target.
+mini_generate_messages/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages.dir/build.make mini/CMakeFiles/mini_generate_messages.dir/build
+.PHONY : mini_generate_messages/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
@@ -439,6 +569,19 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 std_msgs_generate_messages_eus/fast:
 	$(MAKE) -f mini/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mini/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named mini_generate_messages_nodejs
+
+# Build rule for target.
+mini_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mini_generate_messages_nodejs
+.PHONY : mini_generate_messages_nodejs
+
+# fast build rule for target.
+mini_generate_messages_nodejs/fast:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_nodejs.dir/build.make mini/CMakeFiles/mini_generate_messages_nodejs.dir/build
+.PHONY : mini_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_nodejs
@@ -1060,18 +1203,29 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... mini_generate_messages_py"
+	@echo "... mini_gennodejs"
+	@echo "... mini_genlisp"
+	@echo "... mini_geneus"
+	@echo "... mini_generate_messages_eus"
+	@echo "... mini_gencpp"
+	@echo "... mini_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... mini_genpy"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... mini_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... mini_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
+	@echo "... mini_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
