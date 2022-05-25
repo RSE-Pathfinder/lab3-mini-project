@@ -1,2 +1,2 @@
-
+limo_base
 -DCATKIN_DEVEL_PREFIX=/home/paulyse/lab3-mini-project/devel -DCMAKE_INSTALL_PREFIX=/home/paulyse/lab3-mini-project/install -G Unix Makefiles

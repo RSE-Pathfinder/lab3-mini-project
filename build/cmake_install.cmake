@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/paulyse/lab3-mini-project/build/gtest/cmake_install.cmake")
+  include("/home/paulyse/lab3-mini-project/build/limo_base/cmake_install.cmake")
 
 endif()
 
