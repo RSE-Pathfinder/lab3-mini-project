@@ -10,11 +10,11 @@ def req():
         val = rospy.ServiceProxy('Status', Status)
 
 def callback(data):
-  pub = rospy.Publisher('limo_status/vehicle_state', String, queue_size = 10)
-  pub = rospy.Publisher('limo_status/control_mode', String, queue_size = 10)
-  pub = rospy.Publisher('limo_status/vehicle_state', String, queue_size = 10)
-  pub = rospy.Publisher('/limo_status/error_code', String, queue_size = 10)
-  pub = rospy.Publisher('/limo_status/motion_mode', String, queue_size = 10)
+  pub0 = rospy.Publisher('limo_status/vehicle_state', String, queue_size = 10)
+  pub1 = rospy.Publisher('limo_status/control_mode', String, queue_size = 10)
+  pub2 = rospy.Publisher('limo_status/vehicle_state', String, queue_size = 10)
+  pub3 = rospy.Publisher('/limo_status/error_code', String, queue_size = 10)
+  pub4 = rospy.Publisher('/limo_status/motion_mode', String, queue_size = 10)
   rospy.spin()
 
 if __name__ == '__main__':
