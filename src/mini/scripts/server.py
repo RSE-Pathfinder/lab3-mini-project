@@ -13,7 +13,7 @@
 ## response
 #string status_string
 
-from mini.srv import get_status,status_string
+from mini.srv import *
 import rospy
 from std_msgs.msg import String
 
@@ -28,7 +28,7 @@ def handle_status(req):
 
 def status_server():
     rospy.init_node('status_server')
-    s = rospy.Service('status', get_status, handle_status)
+    s = rospy.Service('status', Status, handle_status)
     rospy.spin()
     
 if __name__ == "__main__":

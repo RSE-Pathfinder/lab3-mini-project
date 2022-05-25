@@ -28,8 +28,8 @@ def req():
         req_val = 0
 
       #Send service request
-      get_status = rospy.ServiceProxy('Status', get_status)
-      limo_status = get_status(req_val)
+      get = rospy.ServiceProxy('Status', Status)
+      limo_status = get(req_val)
 
       #Publish result
       if req_val == 0:
