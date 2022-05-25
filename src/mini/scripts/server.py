@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 
-# IFDEBUG
+#IFDEBUG
 from __future__ import print_function
 import rospy
 from std_msgs.msg import String
 from mini.srv import Status
 
 def handle_status(req):
+    #IFDEBUG
+    print("Returning.")
     return {
         '0': Status("GET_STATUS_VEHICLE_STATE"),
         '1': Status("GET_STATUS_CONTROL_MODE"),
@@ -18,7 +20,7 @@ def handle_status(req):
 def status_server():
     rospy.init_node('status_server')
     s = rospy.Service('Status', Status, handle_status)
-    # IFDEBUG
+    #IFDEBUG
     print("This is server.")
     rospy.spin()
     
