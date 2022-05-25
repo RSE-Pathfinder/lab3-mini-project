@@ -408,23 +408,35 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory mini
 
 # Convenience name for "all" pass in the directory.
-mini/all:
+mini/all: mini/CMakeFiles/mini_generate_messages.dir/all
 
 .PHONY : mini/all
 
 # Convenience name for "clean" pass in the directory.
+mini/clean: mini/CMakeFiles/mini_generate_messages_py.dir/clean
+mini/clean: mini/CMakeFiles/mini_gennodejs.dir/clean
+mini/clean: mini/CMakeFiles/mini_genlisp.dir/clean
+mini/clean: mini/CMakeFiles/mini_geneus.dir/clean
+mini/clean: mini/CMakeFiles/mini_generate_messages_eus.dir/clean
+mini/clean: mini/CMakeFiles/mini_gencpp.dir/clean
+mini/clean: mini/CMakeFiles/mini_generate_messages_cpp.dir/clean
 mini/clean: mini/CMakeFiles/roscpp_generate_messages_py.dir/clean
+mini/clean: mini/CMakeFiles/mini_genpy.dir/clean
 mini/clean: mini/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 mini/clean: mini/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 mini/clean: mini/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 mini/clean: mini/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 mini/clean: mini/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+mini/clean: mini/CMakeFiles/mini_generate_messages_lisp.dir/clean
 mini/clean: mini/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+mini/clean: mini/CMakeFiles/mini_generate_messages.dir/clean
 mini/clean: mini/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 mini/clean: mini/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+mini/clean: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/clean
 mini/clean: mini/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 mini/clean: mini/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 mini/clean: mini/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+mini/clean: mini/CMakeFiles/mini_generate_messages_nodejs.dir/clean
 mini/clean: mini/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 mini/clean: mini/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 mini/clean: mini/CMakeFiles/std_msgs_generate_messages_py.dir/clean
@@ -435,6 +447,233 @@ mini/clean: mini/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 mini/preinstall:
 
 .PHONY : mini/preinstall
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_generate_messages_py.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_generate_messages_py.dir/all: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+mini/CMakeFiles/mini_generate_messages_py.dir/all: mini/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_py.dir/build.make mini/CMakeFiles/mini_generate_messages_py.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_py.dir/build.make mini/CMakeFiles/mini_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=28,29 "Built target mini_generate_messages_py"
+.PHONY : mini/CMakeFiles/mini_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_generate_messages_py.dir/rule
+
+# Convenience name for target.
+mini_generate_messages_py: mini/CMakeFiles/mini_generate_messages_py.dir/rule
+
+.PHONY : mini_generate_messages_py
+
+# clean rule for target.
+mini/CMakeFiles/mini_generate_messages_py.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_py.dir/build.make mini/CMakeFiles/mini_generate_messages_py.dir/clean
+.PHONY : mini/CMakeFiles/mini_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_gennodejs.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_gennodejs.dir/all: mini/CMakeFiles/mini_generate_messages_nodejs.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_gennodejs.dir/build.make mini/CMakeFiles/mini_gennodejs.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_gennodejs.dir/build.make mini/CMakeFiles/mini_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target mini_gennodejs"
+.PHONY : mini/CMakeFiles/mini_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_gennodejs.dir/rule
+
+# Convenience name for target.
+mini_gennodejs: mini/CMakeFiles/mini_gennodejs.dir/rule
+
+.PHONY : mini_gennodejs
+
+# clean rule for target.
+mini/CMakeFiles/mini_gennodejs.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_gennodejs.dir/build.make mini/CMakeFiles/mini_gennodejs.dir/clean
+.PHONY : mini/CMakeFiles/mini_gennodejs.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_gennodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_genlisp.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_genlisp.dir/all: mini/CMakeFiles/mini_generate_messages_lisp.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_genlisp.dir/build.make mini/CMakeFiles/mini_genlisp.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_genlisp.dir/build.make mini/CMakeFiles/mini_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target mini_genlisp"
+.PHONY : mini/CMakeFiles/mini_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_genlisp.dir/rule
+
+# Convenience name for target.
+mini_genlisp: mini/CMakeFiles/mini_genlisp.dir/rule
+
+.PHONY : mini_genlisp
+
+# clean rule for target.
+mini/CMakeFiles/mini_genlisp.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_genlisp.dir/build.make mini/CMakeFiles/mini_genlisp.dir/clean
+.PHONY : mini/CMakeFiles/mini_genlisp.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_geneus.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_geneus.dir/all: mini/CMakeFiles/mini_generate_messages_eus.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_geneus.dir/build.make mini/CMakeFiles/mini_geneus.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_geneus.dir/build.make mini/CMakeFiles/mini_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target mini_geneus"
+.PHONY : mini/CMakeFiles/mini_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_geneus.dir/rule
+
+# Convenience name for target.
+mini_geneus: mini/CMakeFiles/mini_geneus.dir/rule
+
+.PHONY : mini_geneus
+
+# clean rule for target.
+mini/CMakeFiles/mini_geneus.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_geneus.dir/build.make mini/CMakeFiles/mini_geneus.dir/clean
+.PHONY : mini/CMakeFiles/mini_geneus.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_generate_messages_eus.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_generate_messages_eus.dir/all: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+mini/CMakeFiles/mini_generate_messages_eus.dir/all: mini/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_eus.dir/build.make mini/CMakeFiles/mini_generate_messages_eus.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_eus.dir/build.make mini/CMakeFiles/mini_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=24,25 "Built target mini_generate_messages_eus"
+.PHONY : mini/CMakeFiles/mini_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+mini_generate_messages_eus: mini/CMakeFiles/mini_generate_messages_eus.dir/rule
+
+.PHONY : mini_generate_messages_eus
+
+# clean rule for target.
+mini/CMakeFiles/mini_generate_messages_eus.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_eus.dir/build.make mini/CMakeFiles/mini_generate_messages_eus.dir/clean
+.PHONY : mini/CMakeFiles/mini_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_gencpp.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_gencpp.dir/all: mini/CMakeFiles/mini_generate_messages_cpp.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_gencpp.dir/build.make mini/CMakeFiles/mini_gencpp.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_gencpp.dir/build.make mini/CMakeFiles/mini_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target mini_gencpp"
+.PHONY : mini/CMakeFiles/mini_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_gencpp.dir/rule
+
+# Convenience name for target.
+mini_gencpp: mini/CMakeFiles/mini_gencpp.dir/rule
+
+.PHONY : mini_gencpp
+
+# clean rule for target.
+mini/CMakeFiles/mini_gencpp.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_gencpp.dir/build.make mini/CMakeFiles/mini_gencpp.dir/clean
+.PHONY : mini/CMakeFiles/mini_gencpp.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_generate_messages_cpp.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_generate_messages_cpp.dir/all: mini/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+mini/CMakeFiles/mini_generate_messages_cpp.dir/all: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_cpp.dir/build.make mini/CMakeFiles/mini_generate_messages_cpp.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_cpp.dir/build.make mini/CMakeFiles/mini_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=23 "Built target mini_generate_messages_cpp"
+.PHONY : mini/CMakeFiles/mini_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+mini_generate_messages_cpp: mini/CMakeFiles/mini_generate_messages_cpp.dir/rule
+
+.PHONY : mini_generate_messages_cpp
+
+# clean rule for target.
+mini/CMakeFiles/mini_generate_messages_cpp.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_cpp.dir/build.make mini/CMakeFiles/mini_generate_messages_cpp.dir/clean
+.PHONY : mini/CMakeFiles/mini_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_generate_messages_cpp.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target mini/CMakeFiles/roscpp_generate_messages_py.dir
@@ -465,6 +704,38 @@ mini/CMakeFiles/roscpp_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: mini/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_genpy.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_genpy.dir/all: mini/CMakeFiles/mini_generate_messages_py.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_genpy.dir/build.make mini/CMakeFiles/mini_genpy.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_genpy.dir/build.make mini/CMakeFiles/mini_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target mini_genpy"
+.PHONY : mini/CMakeFiles/mini_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_genpy.dir/rule
+
+# Convenience name for target.
+mini_genpy: mini/CMakeFiles/mini_genpy.dir/rule
+
+.PHONY : mini_genpy
+
+# clean rule for target.
+mini/CMakeFiles/mini_genpy.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_genpy.dir/build.make mini/CMakeFiles/mini_genpy.dir/clean
+.PHONY : mini/CMakeFiles/mini_genpy.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_genpy.dir/clean
 
 .PHONY : clean
 
@@ -629,6 +900,39 @@ clean: mini/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target mini/CMakeFiles/mini_generate_messages_lisp.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_generate_messages_lisp.dir/all: mini/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mini/CMakeFiles/mini_generate_messages_lisp.dir/all: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_lisp.dir/build.make mini/CMakeFiles/mini_generate_messages_lisp.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_lisp.dir/build.make mini/CMakeFiles/mini_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=26 "Built target mini_generate_messages_lisp"
+.PHONY : mini/CMakeFiles/mini_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+mini_generate_messages_lisp: mini/CMakeFiles/mini_generate_messages_lisp.dir/rule
+
+.PHONY : mini_generate_messages_lisp
+
+# clean rule for target.
+mini/CMakeFiles/mini_generate_messages_lisp.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_lisp.dir/build.make mini/CMakeFiles/mini_generate_messages_lisp.dir/clean
+.PHONY : mini/CMakeFiles/mini_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target mini/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
@@ -657,6 +961,47 @@ mini/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: mini/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_generate_messages.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_generate_messages.dir/all: mini/CMakeFiles/mini_generate_messages_py.dir/all
+mini/CMakeFiles/mini_generate_messages.dir/all: mini/CMakeFiles/mini_generate_messages_eus.dir/all
+mini/CMakeFiles/mini_generate_messages.dir/all: mini/CMakeFiles/mini_generate_messages_cpp.dir/all
+mini/CMakeFiles/mini_generate_messages.dir/all: mini/CMakeFiles/mini_generate_messages_lisp.dir/all
+mini/CMakeFiles/mini_generate_messages.dir/all: mini/CMakeFiles/mini_generate_messages_nodejs.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages.dir/build.make mini/CMakeFiles/mini_generate_messages.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages.dir/build.make mini/CMakeFiles/mini_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target mini_generate_messages"
+.PHONY : mini/CMakeFiles/mini_generate_messages.dir/all
+
+# Include target in all.
+all: mini/CMakeFiles/mini_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_generate_messages.dir/rule
+
+# Convenience name for target.
+mini_generate_messages: mini/CMakeFiles/mini_generate_messages.dir/rule
+
+.PHONY : mini_generate_messages
+
+# clean rule for target.
+mini/CMakeFiles/mini_generate_messages.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages.dir/build.make mini/CMakeFiles/mini_generate_messages.dir/clean
+.PHONY : mini/CMakeFiles/mini_generate_messages.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_generate_messages.dir/clean
 
 .PHONY : clean
 
@@ -721,6 +1066,38 @@ mini/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: mini/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir
+
+# All Build rule for target.
+mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all:
+	$(MAKE) -f mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build.make mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/depend
+	$(MAKE) -f mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build.make mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num= "Built target _mini_generate_messages_check_deps_Status"
+.PHONY : mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule
+
+# Convenience name for target.
+_mini_generate_messages_check_deps_Status: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule
+
+.PHONY : _mini_generate_messages_check_deps_Status
+
+# clean rule for target.
+mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build.make mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/clean
+.PHONY : mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/clean
 
 .PHONY : clean
 
@@ -817,6 +1194,39 @@ mini/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: mini/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mini/CMakeFiles/mini_generate_messages_nodejs.dir
+
+# All Build rule for target.
+mini/CMakeFiles/mini_generate_messages_nodejs.dir/all: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/all
+mini/CMakeFiles/mini_generate_messages_nodejs.dir/all: mini/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_nodejs.dir/build.make mini/CMakeFiles/mini_generate_messages_nodejs.dir/depend
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_nodejs.dir/build.make mini/CMakeFiles/mini_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=27 "Built target mini_generate_messages_nodejs"
+.PHONY : mini/CMakeFiles/mini_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+mini/CMakeFiles/mini_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/mini_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paulyse/lab3-mini-project/build/CMakeFiles 0
+.PHONY : mini/CMakeFiles/mini_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+mini_generate_messages_nodejs: mini/CMakeFiles/mini_generate_messages_nodejs.dir/rule
+
+.PHONY : mini_generate_messages_nodejs
+
+# clean rule for target.
+mini/CMakeFiles/mini_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f mini/CMakeFiles/mini_generate_messages_nodejs.dir/build.make mini/CMakeFiles/mini_generate_messages_nodejs.dir/clean
+.PHONY : mini/CMakeFiles/mini_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: mini/CMakeFiles/mini_generate_messages_nodejs.dir/clean
 
 .PHONY : clean
 

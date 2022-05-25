@@ -3,6 +3,6 @@ prefix=/home/paulyse/lab3-mini-project/devel
 Name: mini
 Description: Description of mini
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/paulyse/lab3-mini-project/devel/include
 Libs: -L${prefix}/lib 
 Requires: 

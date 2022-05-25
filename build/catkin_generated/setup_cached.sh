@@ -10,6 +10,7 @@
 export CMAKE_PREFIX_PATH="/home/paulyse/lab3-mini-project/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/paulyse/lab3-mini-project/devel/lib:$LD_LIBRARY_PATH"
 export PATH='/opt/ros/melodic/bin:/home/paulyse/gems/bin:/home/paulyse/.local/bin:/home/paulyse/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PKG_CONFIG_PATH="/home/paulyse/lab3-mini-project/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/paulyse/lab3-mini-project/build'
 export PYTHONPATH="/home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/paulyse/lab3-mini-project/devel/share/common-lisp'

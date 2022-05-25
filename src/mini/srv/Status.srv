@@ -6,7 +6,7 @@
 # uint8 GET_STATUS_MOTION_MODE = 4
 
 # request
-uint8 get_statusa
+uint8 get_status
 ---
 # response
 string status_string
