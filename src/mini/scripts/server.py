@@ -2,6 +2,7 @@
 
 #IFDEBUG
 from __future__ import print_function
+from mini.srv import *
 import rospy
 from std_msgs.msg import String
 from mini.srv import Status
