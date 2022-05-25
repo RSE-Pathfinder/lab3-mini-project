@@ -13,7 +13,7 @@
 ## response
 #string status_string
 
-from Status.srv import get_status,status_string
+from mini.srv import get_status,status_string
 import rospy
 from std_msgs.msg import String
 
