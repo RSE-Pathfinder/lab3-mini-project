@@ -15,19 +15,26 @@
 
 # IFDEBUG
 from __future__ import print_function
-from mini.srv import *
 import rospy
 from std_msgs.msg import String
 from mini.srv import Status
 
 def handle_status(req):
-    return {
-        '0': Status("GET_STATUS_VEHICLE_STATE"),
-        '1': Status("GET_STATUS_CONTROL_MODE"),
-        '2': Status("GET_STATUS_BATTERY_VOLTAGE"),
-        '3': Status("GET_STATUS_ERROR_CODE"),
-        '4': Status("GET_STATUS_MOTION_MODE"),
-    } [Status]
+    limo = ""
+    if req == 0:
+        limo = "GET_STATUS_VEHICLE_STATE"
+        print("stuff")
+    elif req == 1:
+        limo = "GET_STATUS_CONTROL_MODE"
+    elif req == 2:
+        limo = "GET_STATUS_BATTERY_VOLTAGE"
+    elif req == 3:
+        limo = "GET_STATUS_ERROR_CODE"
+    elif req == 4:
+        limo = "GET_STATUS_MOTION_MODE"
+    print(req)
+    return limo
+
 
 def status_server():
     rospy.init_node('status_server')
