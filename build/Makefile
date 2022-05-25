@@ -532,6 +532,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named _mini_generate_messages_check_deps_Status
+
+# Build rule for target.
+_mini_generate_messages_check_deps_Status: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _mini_generate_messages_check_deps_Status
+.PHONY : _mini_generate_messages_check_deps_Status
+
+# fast build rule for target.
+_mini_generate_messages_check_deps_Status/fast:
+	$(MAKE) -f mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build.make mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build
+.PHONY : _mini_generate_messages_check_deps_Status/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -1222,6 +1235,7 @@ help:
 	@echo "... mini_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... _mini_generate_messages_check_deps_Status"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"

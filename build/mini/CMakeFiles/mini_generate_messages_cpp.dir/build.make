@@ -53,6 +53,18 @@ CMAKE_BINARY_DIR = /home/paulyse/lab3-mini-project/build
 # Include the progress variables for this target.
 include mini/CMakeFiles/mini_generate_messages_cpp.dir/progress.make
 
+mini/CMakeFiles/mini_generate_messages_cpp: /home/paulyse/lab3-mini-project/devel/include/mini/Status.h
+
+
+/home/paulyse/lab3-mini-project/devel/include/mini/Status.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/paulyse/lab3-mini-project/devel/include/mini/Status.h: /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv
+/home/paulyse/lab3-mini-project/devel/include/mini/Status.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/paulyse/lab3-mini-project/devel/include/mini/Status.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from mini/Status.srv"
+	cd /home/paulyse/lab3-mini-project/src/mini && /home/paulyse/lab3-mini-project/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p mini -o /home/paulyse/lab3-mini-project/devel/include/mini -e /opt/ros/melodic/share/gencpp/cmake/..
+
+mini_generate_messages_cpp: mini/CMakeFiles/mini_generate_messages_cpp
+mini_generate_messages_cpp: /home/paulyse/lab3-mini-project/devel/include/mini/Status.h
 mini_generate_messages_cpp: mini/CMakeFiles/mini_generate_messages_cpp.dir/build.make
 
 .PHONY : mini_generate_messages_cpp

@@ -53,6 +53,23 @@ CMAKE_BINARY_DIR = /home/paulyse/lab3-mini-project/build
 # Include the progress variables for this target.
 include mini/CMakeFiles/mini_generate_messages_py.dir/progress.make
 
+mini/CMakeFiles/mini_generate_messages_py: /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/_Status.py
+mini/CMakeFiles/mini_generate_messages_py: /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/__init__.py
+
+
+/home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/_Status.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/_Status.py: /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV mini/Status"
+	cd /home/paulyse/lab3-mini-project/build/mini && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p mini -o /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv
+
+/home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/__init__.py: /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/_Status.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for mini"
+	cd /home/paulyse/lab3-mini-project/build/mini && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv --initpy
+
+mini_generate_messages_py: mini/CMakeFiles/mini_generate_messages_py
+mini_generate_messages_py: /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/_Status.py
+mini_generate_messages_py: /home/paulyse/lab3-mini-project/devel/lib/python2.7/dist-packages/mini/srv/__init__.py
 mini_generate_messages_py: mini/CMakeFiles/mini_generate_messages_py.dir/build.make
 
 .PHONY : mini_generate_messages_py

@@ -453,6 +453,21 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule:
+	cd /home/paulyse/lab3-mini-project/build && $(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule
+.PHONY : mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule
+
+# Convenience name for target.
+_mini_generate_messages_check_deps_Status: mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/rule
+
+.PHONY : _mini_generate_messages_check_deps_Status
+
+# fast build rule for target.
+_mini_generate_messages_check_deps_Status/fast:
+	cd /home/paulyse/lab3-mini-project/build && $(MAKE) -f mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build.make mini/CMakeFiles/_mini_generate_messages_check_deps_Status.dir/build
+.PHONY : _mini_generate_messages_check_deps_Status/fast
+
+# Convenience name for target.
 mini/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/paulyse/lab3-mini-project/build && $(MAKE) -f CMakeFiles/Makefile2 mini/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : mini/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
@@ -589,6 +604,7 @@ help:
 	@echo "... mini_generate_messages"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... _mini_generate_messages_check_deps_Status"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"

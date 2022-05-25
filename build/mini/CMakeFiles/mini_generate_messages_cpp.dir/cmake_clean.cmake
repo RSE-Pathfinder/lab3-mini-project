@@ -1,3 +1,7 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/mini_generate_messages_cpp"
+  "/home/paulyse/lab3-mini-project/devel/include/mini/Status.h"
+)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

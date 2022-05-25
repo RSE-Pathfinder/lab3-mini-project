@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = ""
+services_str = "/home/paulyse/lab3-mini-project/src/mini/srv/Status.srv"
 pkg_name = "mini"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

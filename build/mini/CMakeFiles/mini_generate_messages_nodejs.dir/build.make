@@ -53,6 +53,16 @@ CMAKE_BINARY_DIR = /home/paulyse/lab3-mini-project/build
 # Include the progress variables for this target.
 include mini/CMakeFiles/mini_generate_messages_nodejs.dir/progress.make
 
+mini/CMakeFiles/mini_generate_messages_nodejs: /home/paulyse/lab3-mini-project/devel/share/gennodejs/ros/mini/srv/Status.js
+
+
+/home/paulyse/lab3-mini-project/devel/share/gennodejs/ros/mini/srv/Status.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/paulyse/lab3-mini-project/devel/share/gennodejs/ros/mini/srv/Status.js: /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from mini/Status.srv"
+	cd /home/paulyse/lab3-mini-project/build/mini && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p mini -o /home/paulyse/lab3-mini-project/devel/share/gennodejs/ros/mini/srv
+
+mini_generate_messages_nodejs: mini/CMakeFiles/mini_generate_messages_nodejs
+mini_generate_messages_nodejs: /home/paulyse/lab3-mini-project/devel/share/gennodejs/ros/mini/srv/Status.js
 mini_generate_messages_nodejs: mini/CMakeFiles/mini_generate_messages_nodejs.dir/build.make
 
 .PHONY : mini_generate_messages_nodejs

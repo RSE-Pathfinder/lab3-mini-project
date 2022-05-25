@@ -53,6 +53,16 @@ CMAKE_BINARY_DIR = /home/paulyse/lab3-mini-project/build
 # Include the progress variables for this target.
 include mini/CMakeFiles/mini_generate_messages_lisp.dir/progress.make
 
+mini/CMakeFiles/mini_generate_messages_lisp: /home/paulyse/lab3-mini-project/devel/share/common-lisp/ros/mini/srv/Status.lisp
+
+
+/home/paulyse/lab3-mini-project/devel/share/common-lisp/ros/mini/srv/Status.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/paulyse/lab3-mini-project/devel/share/common-lisp/ros/mini/srv/Status.lisp: /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/paulyse/lab3-mini-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from mini/Status.srv"
+	cd /home/paulyse/lab3-mini-project/build/mini && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/paulyse/lab3-mini-project/src/mini/srv/Status.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p mini -o /home/paulyse/lab3-mini-project/devel/share/common-lisp/ros/mini/srv
+
+mini_generate_messages_lisp: mini/CMakeFiles/mini_generate_messages_lisp
+mini_generate_messages_lisp: /home/paulyse/lab3-mini-project/devel/share/common-lisp/ros/mini/srv/Status.lisp
 mini_generate_messages_lisp: mini/CMakeFiles/mini_generate_messages_lisp.dir/build.make
 
 .PHONY : mini_generate_messages_lisp
