@@ -4,16 +4,15 @@ import rospy
 from std_msgs.msg import String
 from ..srv import *
 
-req_val = 4
-
 def req(req_val):
-    rospy.wait_for_service('Status')
-    try:
-        get_status = rospy.ServiceProxy('Status', get_status)
-        status = get_status(req_val)
-        
-    except:
+  rospy.wait_for_service('Status')
+  rospy.Rate(1)
+  try:
+      get_status = rospy.ServiceProxy('Status', get_status)
+      status = get_status(req_val)
+  except:
       return
+  rospy.spin()
 
 def callback(data):
   pub = rospy.Publisher('limo_status/vehicle_state', String, queue_size = 10)
