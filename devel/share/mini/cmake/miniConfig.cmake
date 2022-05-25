@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(mini_EXPORTED_TARGETS "")
+set(mini_EXPORTED_TARGETS "mini_generate_messages_cpp;mini_generate_messages_eus;mini_generate_messages_lisp;mini_generate_messages_nodejs;mini_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${mini_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND mini_EXPORTED_TARGETS ${${mini_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "mini-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${mini_DIR}/${extra})
