@@ -2,6 +2,12 @@
 
 import rospy
 from std_msgs.msg import String
+from .srv import *
+
+def req():
+    rospy.wait_for_service('Status')
+    try:
+        val = rospy.ServiceProxy('Status', Status)
 
 def callback(data):
   pub = rospy.Publisher('limo_status/vehicle_state', String, queue_size = 10)
@@ -12,4 +18,4 @@ def callback(data):
   rospy.spin()
 
 if __name__ == '__main__':
-  callback(data)
+  req()

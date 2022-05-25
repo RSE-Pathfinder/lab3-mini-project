@@ -27,7 +27,7 @@ BUILD_SHARED_LIBS:BOOL=ON
 CATKIN_BLACKLIST_PACKAGES:STRING=
 
 //catkin devel space
-CATKIN_DEVEL_PREFIX:PATH=/home/paulyse/lab3-mini-project/devel
+CATKIN_DEVEL_PREFIX:PATH=/home/syamim/lab3-mini-project/devel
 
 //Catkin enable testing
 CATKIN_ENABLE_TESTING:BOOL=ON
@@ -255,7 +255,7 @@ PYTHON_VERSION:STRING=2
 Project_BINARY_DIR:STATIC=/home/paulyse/lab3-mini-project/build
 
 //Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/paulyse/lab3-mini-project/src
+Project_SOURCE_DIR:STATIC=/home/syamim/lab3-mini-project/src
 
 //Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
@@ -373,7 +373,7 @@ lib:FILEPATH=/opt/ros/melodic/lib/libtf2.so
 limo_base_BINARY_DIR:STATIC=/home/paulyse/lab3-mini-project/build/limo_base
 
 //Value Computed by CMake
-limo_base_SOURCE_DIR:STATIC=/home/paulyse/lab3-mini-project/src/limo_base
+limo_base_SOURCE_DIR:STATIC=/home/syamim/lab3-mini-project/src/limo_base
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -388,7 +388,7 @@ message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 mini_BINARY_DIR:STATIC=/home/paulyse/lab3-mini-project/build/mini
 
 //Value Computed by CMake
-mini_SOURCE_DIR:STATIC=/home/paulyse/lab3-mini-project/src/mini
+mini_SOURCE_DIR:STATIC=/home/syamim/lab3-mini-project/src/mini
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -528,7 +528,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/paulyse/lab3-mini-project/src
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/syamim/lab3-mini-project/src
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
