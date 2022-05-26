@@ -28,25 +28,34 @@ from mini.srv import Status
 #   string status_string
 ##  END
 
+limostatusbuff = [0, 0, 0.0, 0, 0]
+
 def callback(data):
+    global limostatusbuff
     rospy.loginfo(rospy.get_caller_id() + 'I heard %d', data)
+    limostatusbuff[0] = data.vehicle_state
+    limostatusbuff[1] = data.control_mode
+    limostatusbuff[2] = data.battery_voltage
+    limostatusbuff[3] = data.error_code
+    limostatusbuff[4] = data.motion_mode
 
     #IFDEBUG
     print("Translating Status.")
     #ENDIF
 
 def handle_status(req):
+    global limostatusbuff
     myStatus = ""
     if req.get_status == 0:
-        myStatus = "GET_STATUS_VEHICLE_STATE %s" % LimoStatus.vehicle_state
+        myStatus = "GET_STATUS_VEHICLE_STATE %s" % limostatusbuff.vehicle_state
     elif req.get_status == 1:
-        myStatus = "GET_STATUS_CONTROL_MODE %s" % LimoStatus.control_mode
+        myStatus = "GET_STATUS_CONTROL_MODE %s" % limostatusbuff.control_mode
     elif req.get_status == 2:
-        myStatus = "GET_STATUS_BATTERY_VOLTAGE %s" % LimoStatus.battery_voltage
+        myStatus = "GET_STATUS_BATTERY_VOLTAGE %s" % limostatusbuff.battery_voltage
     elif req.get_status == 3:
-        myStatus = "GET_STATUS_ERROR_CODE %s" % LimoStatus.error_code
+        myStatus = "GET_STATUS_ERROR_CODE %s" % limostatusbuff.error_code
     elif req.get_status == 4:
-        myStatus = "GET_STATUS_MOTION_MODE %s" % LimoStatus.motion_mode
+        myStatus = "GET_STATUS_MOTION_MODE %s" % limostatusbuff.motion_mode
 
     #IFDEBUG
     print("Returning Status.")
