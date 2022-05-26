@@ -14,7 +14,7 @@ from mini.srv import *
 
 def req():
   #Initialise Node
-  rospy.init_node('limo_status_client_node', anonymous = True)
+  rospy.init_node('limo_status_client_node')
   limo_status = "test"
   size = 30
   req_val = 0
