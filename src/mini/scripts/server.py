@@ -5,8 +5,18 @@ from __future__ import print_function
 #ENDIF
 
 import rospy
+
 from std_msgs.msg import String
 ##  String data type
+
+from mini.srv import Status
+##  Status.srv
+#   #request arguement
+#   uint8 get_status
+#   ---
+#   #response
+#   string status_string
+##  END
 
 from limo_base.msg import LimoStatus
 ##  LimoStatus.msg
@@ -19,30 +29,21 @@ from limo_base.msg import LimoStatus
 #   uint8 motion_mode
 ##  END
 
-from mini.srv import Status
-##  Status.srv
-#   #request arguement
-#   uint8 get_status
-#   ---
-#   #response
-#   string status_string
-##  END
-
-# Global variable to store LimoStatus
+# Global Variable to store LimoStatus
 limostatusbuff = [0, 0, 0.0, 0, 0]
 
 # Subscriber
 def callback(data):
+
+    # Initialise Variables
     global limostatusbuff
+
+    # Assign data from LimoStatus to buffer
     limostatusbuff[0] = data.vehicle_state
     limostatusbuff[1] = data.control_mode
     limostatusbuff[2] = data.battery_voltage
     limostatusbuff[3] = data.error_code
     limostatusbuff[4] = data.motion_mode
-
-    #IFDEBUG
-    print("Translating Status.")
-    #ENDIF
 
 # Service
 def handle_status(req):
@@ -51,53 +52,68 @@ def handle_status(req):
     print("get_status:", req.get_status)
     #ENDIF
 
+    # Initialise Variables
     global limostatusbuff
     myStatus = ""
+
+    # GET_STATUS_VEHICLE_STATE
     if req.get_status == 0:
         if limostatusbuff[0] == 0x00:
-            myStatus = "GET_STATUS_VEHICLE_STATE: System Normal"
+            myStatus = "VEHICLE STATE: System Normal"
         elif limostatusbuff[0] == 0x02:
-            myStatus = "GET_STATUS_VEHICLE_STATE: System Exception"
+            myStatus = "VEHICLE STATE: System Exception"
+
+    # GET_STATUS_CONTROL_MODE
     elif req.get_status == 1:
         if limostatusbuff[1] == 0x00:
-            myStatus = "GET_STATUS_CONTROL_MODE: Standby"
+            myStatus = "CONTROL MODE: Standby"
         elif limostatusbuff[1] == 0x01:
-            myStatus = "GET_STATUS_CONTROL_MODE: Command Control"
+            myStatus = "CONTROL MODE: Command Control"
         elif limostatusbuff[1] == 0x02:
-            myStatus = "GET_STATUS_CONTROL_MODE: App Control"
+            myStatus = "CONTROL MODE: App Control"
         elif limostatusbuff[1] == 0x03:
-            myStatus = "GET_STATUS_CONTROL_MODE: Remote Control"
+            myStatus = "CONTROL MODE: Remote Control"
+
+    # GET_STATUS_BATTERY_VOLTAGE
     elif req.get_status == 2:
-        myStatus = "GET_STATUS_BATTERY_VOLTAGE: %sV" % limostatusbuff[2]
+        myStatus = "BATTERY VOLTAGE: %sV" % limostatusbuff[2]
+
+    # GET_STATUS_ERROR_CODE
     elif req.get_status == 3:
         if limostatusbuff[3] > 0x00:
-            myStatus = "GET_STATUS_ERROR_CODE: fault"
+            myStatus = "ERROR CODE: fault"
         else:
-            myStatus = "GET_STATUS_ERROR_CODE: no fault"
+            myStatus = "ERROR CODE: no fault"
+
+    # GET_STATUS_MOTION_MODE
     elif req.get_status == 4:
         if limostatusbuff[4] == 0x00:
-            myStatus = "GET_STATUS_MOTION_MODE: 4-wheel differential"
+            myStatus = "MOTION MODE: 4-wheel differential"
         elif limostatusbuff[4] == 0x01:
-            myStatus = "GET_STATUS_MOTION_MODE: Ackermann"
+            myStatus = "MOTION MODE: Ackermann"
         elif limostatusbuff[4] == 0x02:
-            myStatus = "GET_STATUS_MOTION_MODE: Mecanum"
+            myStatus = "MOTION MODE: Mecanum"
 
-    #IFDEBUG
-    print("Returning Status.")
-    #ENDIF
-
+    # Return
     return myStatus
 
-# Initialise Node
+# Node
 def status_server():
+
+    # Node
     rospy.init_node('limo_status_translator_node')
+
+    # Subscriber
     rospy.Subscriber('/limo_status', LimoStatus, callback)
+
+    # Service
     s = rospy.Service('Status', Status, handle_status)
 
     #IFDEBUG
     print("This is server.")
     #ENDIF
 
+    # Prevents python from exiting until Node is stopped
     rospy.spin()
 
 # Main
