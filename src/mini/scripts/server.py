@@ -28,8 +28,10 @@ from mini.srv import Status
 #   string status_string
 ##  END
 
+# Global variable to store LimoStatus
 limostatusbuff = [0, 0, 0.0, 0, 0]
 
+# Subscriber
 def callback(data):
     global limostatusbuff
     rospy.loginfo(rospy.get_caller_id() + 'I heard %d', data)
@@ -43,6 +45,7 @@ def callback(data):
     print("Translating Status.")
     #ENDIF
 
+# Service
 def handle_status(req):
     global limostatusbuff
     myStatus = ""
@@ -63,6 +66,7 @@ def handle_status(req):
 
     return myStatus
 
+# Initialise Node
 def status_server():
     rospy.init_node('limo_status_translator_node', anonymous = True)
     rospy.Subscriber('/limo_status', LimoStatus, callback)
@@ -74,6 +78,7 @@ def status_server():
 
     rospy.spin()
 
+# Main
 if __name__ == '__main__':
     try:
         status_server()

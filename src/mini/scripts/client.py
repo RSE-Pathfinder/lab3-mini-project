@@ -14,7 +14,7 @@ from mini.srv import *
 
 def req():
   #Initialise Node
-  rospy.init_node('client_node')
+  rospy.init_node('limo_status_client_node', anonymous = True)
   limo_status = "test"
   size = 30
   req_val = 0
@@ -33,19 +33,19 @@ def req():
     #Publish result
     rospy.loginfo(limo_status.status_string)
     if req_val == 0:
-      pub0 = rospy.Publisher('limo_status', String, queue_size = size)
+      pub0 = rospy.Publisher('/limo_status/vehicle_state', String, queue_size = size)
       pub0.publish(limo_status.status_string)
     elif req_val == 1:
-      pub1 = rospy.Publisher('limo_status', String, queue_size = size)
+      pub1 = rospy.Publisher('/limo_status/control_mode', String, queue_size = size)
       pub1.publish(limo_status.status_string)
     elif req_val == 2:
-      pub2 = rospy.Publisher('limo_status', String, queue_size = size)
+      pub2 = rospy.Publisher('/limo_status/battery_voltage', String, queue_size = size)
       pub2.publish(limo_status.status_string)
     elif req_val == 3:
-      pub3 = rospy.Publisher('limo_status', String, queue_size = size)
+      pub3 = rospy.Publisher('/limo_status/error_code', String, queue_size = size)
       pub3.publish(limo_status.status_string)
     elif req_val == 4:
-      pub4 = rospy.Publisher('limo_status', String, queue_size = size)
+      pub4 = rospy.Publisher('/limo_status/motion_mode', String, queue_size = size)
       pub4.publish(limo_status.status_string)
     
     #Cycle commands
